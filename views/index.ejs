@@ -26,10 +26,10 @@
                         <div class="card-body">
                             <h5  id="book_title" class="card-title"><%= books[i].title %></h5>
                             <h6 id="book_isbn" class="card-subtitle mb-2 text-muted"><%= books[i].isbn %></h6>
-                            <div id="book_author"><%= books[i].author %></div>
-                            <div id="book_publisher"><%= books[i].publisher %></div>
-                            <div id="book_publish_date"><%= books[i].publish_date %></div>
-                            <div id="book_numOfPages"><%= books[i].numOfPages%></div>
+                            <div id="book_author">Author: <%= books[i].author %></div>
+                            <div id="book_publisher">Publisher: <%= books[i].publisher %></div>
+                            <div id="book_publish_date">Publish Date: <%= books[i].publish_date %></div>
+                            <div id="book_numOfPages">Number of Pages: <%= books[i].numOfPages%></div>
                             <hr>
                             <button type="button" class="btn btn-danger" onclick="deleteBook(`<%=books[i].isbn%>`)" >Delete</button>
                             <button types="button" class="btn btn-primary" data-toggle="modal" 
